@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+  }
+  body{
+    
+    background-color:#192131;
+    overflow-x: hidden;
+    
+  }
+  .container{
+  display:flex;
+  }
+  nav{
+    padding:20px;
+    margin:30px;
+    position:relative;
+    top:0;
+    bottom:0;
+    height:152vh;
+    left:0;
+    background-color:black;
+  
+    width:230px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow: 0 10px 20px green;
+  }
+  h1{
+    color:white;
+  }
+  li a{
+  color:white;
+  font-size:20px;
+  }
+  p{
+    color:black;
+  }
+  p:hover{
+    background-color:blue;
+    padding:5px;
+    margin:5px;
+    width:50%;
+    border-radius:5px;
+  }
+  .nav-item{
+    position:relative;
+    margin-left:10px;
+  }
+  a:hover{
+    background-color:red;
+    padding:5px;
+    margin:5px;
+    border-radius:5px;
+  }
+  
+  /* section part */
+  h1{
+    padding:30px;
+  }
+  .main-top i{
+    position:absolute;
+    right:0;
+    margin:10px 30px;
+    color:rgb(11, 109, 109);
+    cursor:pointer;
+  }
+  .main-skills{
+    display:flex;
+    margin-top:20px;
+  }
+  .main-skills .card1, .card2, .card3, .card4{
+    width:250px;
+    height:120px;
+    margin:10px;
+    background-color:#fff;
+    text-align:center;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0 5px 20px black;
+  }
+  
+  .card1{
+  background-color:#DDEFE0;
+  
+  }
+  .card2{
+    background-color: #F4ECDD;
+    
+  }
+  .card3{
+    background-color: #EFDADA;
+    
+  }
+  .card4{
+    background-color:#DEE0EF;
+    
+  }
+  
+  
+  .charts{
+    width:1060px;
+    height:500px;
+    margin:10px;
+    background-color:rgb(194, 215, 215);
+    line-height:23px;
+    font-size:20px;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0 5px 10px black;
+  }
+  
+  .products1{
+    width:510px;
+    height:350px;
+    margin:20px;
+    background-color:#ded3d3;
+    font-size:25px;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 20px black; 
+    
+    float:left;
+ 
+  }
+ 
+  .products2{
+    width:510px;
+    height:350px;
+    margin:20px;
+    background-color:#ded3d3;
+    font-size:25px;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 20px black;
+    display:inline-flex;
+    
+  
+  }
+  
+  
+  #hi{
+    text-align: right;
+  
+  }
+  
+  h5{
+    float:left;
+  }
+  
+  .user{
+    height:50px;
+    width:50px;
+    background-color: #DDEFE0;
+    border-radius: 50%;
+    margin : 10px;
+
+
+  }
+
+  .line{
+    width: 4px;
+    height: 35px;
+    background-color: green;
+  }
+
+  .line1{
+    width: 4px;
+    height: 35px;
+    background-color:  #6972C3;
+    ;
+  }
+
+  .posi{
+    position: relative;
+    left: 30px;
+    bottom: 50px
+  }
+
+  .posi1{
+    position: relative;
+    left: 30px;
+    bottom: 50px
+  }
+
+  .bell{
+    height:10px;
+    width:10px;
+    background-color: #DDEFE0;
+    padding : 10px;
+    border-radius: 50%;
+  }
+  .logo{
+    position:relative;
+    left:1200px;
+   top :50px;
+  }
+
+  .lists{
+    position: relative;
+    left: 250px;
+    bottom: 200px
+
+  }
