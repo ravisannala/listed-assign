@@ -10,11 +10,12 @@
   body{
     
     background-color:#192131;
-    overflow-x: hidden;
+    
     
   }
   .container{
   display:flex;
+ 
   }
   nav{
     padding:20px;
@@ -22,14 +23,15 @@
     position:relative;
     top:0;
     bottom:0;
-    height:152vh;
+    height:142vh;
     left:0;
     background-color:black;
   
-    width:230px;
+    width:350px;
     border-radius:20px;
-    overflow:hidden;
+    
     box-shadow: 0 10px 20px green;
+    font-weight:1000px;
   }
   h1{
     color:white;
@@ -75,7 +77,7 @@
     margin-top:20px;
   }
   .main-skills .card1, .card2, .card3, .card4{
-    width:250px;
+    width:290px;
     height:120px;
     margin:10px;
     background-color:#fff;
@@ -104,7 +106,7 @@
   
   
   .charts{
-    width:1060px;
+    width:1220px;
     height:500px;
     margin:10px;
     background-color:rgb(194, 215, 215);
@@ -116,7 +118,7 @@
   }
   
   .products1{
-    width:510px;
+    width:590px;
     height:350px;
     margin:20px;
     background-color:#ded3d3;
@@ -130,7 +132,7 @@
   }
  
   .products2{
-    width:510px;
+    width:590px;
     height:350px;
     margin:20px;
     background-color:#ded3d3;
@@ -197,7 +199,7 @@
   }
   .logo{
     position:relative;
-    left:1200px;
+    left:750px;
    top :50px;
   }
 
@@ -206,4 +208,12 @@
     left: 250px;
     bottom: 200px
 
+  }
+  .logout{
+    position:relative;
+    list-style-type:none;
+  }
+  .dashboard{
+    color:red;
+    text-shadow: white 5px 0px  8px;
   }

@@ -16,14 +16,14 @@
   padding:20px;
   background-color:rgb(87, 157, 157);
   width:400px;
-  height:530px;
+  height:580px;
   border-radius:20px;
   font-size:20px;
   text-align: center;
   position:relative;
   left:700px;
   bottom:700px;
-  overflow:none ;
+  overflow: hidden;
 
 }
 .auth-card1,.auth-card2,.auth-card3,.auth-card4{
@@ -41,13 +41,22 @@
 
 
 input,button{
-  font-size:18px;
+  font-size:25px;
   border-radius:5px;
   background-color:antiquewhite;
   line-height:25px;
+  position:relative;
+  left:px;
   
 }
 button{
   margin:10px;
   padding:5px;
+}
+.google{
+  background-color:#df4930;
+  border-radius:20px;
+  font-size:30px;
+  font-weight:500px;
+  
 }

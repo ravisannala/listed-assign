@@ -12,6 +12,10 @@ import {TbUsers} from 'react-icons/tb';
 import {AiOutlineSearch} from 'react-icons/ai';
 import { ApexChart } from './charts';
 import { PieChart,Tooltip,Pie} from 'recharts'
+import {Link} from 'react-router-dom';
+
+
+import { useState, useEffect } from 'react';
 
 
 
@@ -20,13 +24,18 @@ import { PieChart,Tooltip,Pie} from 'recharts'
 
 const Mainpage = () => {
 
-  const data=[
+  
+
+ 
+
+  const dat=[
     {name:"Week1", value:55},
     {name:"Week2", value:31},
     {name:"Week3", value:14},
     {name:"Week4"}   
 
   ];
+
 
   return (
     <div className="container">
@@ -35,6 +44,7 @@ const Mainpage = () => {
       <nav>
       
         <ul>
+        <h1 className="dashboard">Dashboard</h1>
        <h1> Board.</h1>
         <br /><br />
         
@@ -53,26 +63,24 @@ const Mainpage = () => {
         <br /><br /><br /><br /><br /><br /><br /> <br /><br />
         <br />
         <h1>Help</h1>
-        <h1>Contact Us</h1>
+        <h1>ContactUs</h1>
+        <ul className="logout">
+           <h1> <li><a href="http://localhost:3000" >Logout</a></li></h1>
+          </ul>
       </nav>
-
       <section className="main">
         <span className="main-top">
-          <h1>Dashboard</h1>
           <div className="logo">
           <img className="user" src="bellicon.jpg" alt="logo"/>
-          <img className="user" src="images.jpg" alt="logo"/>
-          
+          <img className="user" src="images.jpg" alt="logo"/>    
           </div>
           
          
           <form>
 
-          <pre>                                                                                                                                                                                                                         <input type="search" placeholder="  Search " 
+          <pre>                                                                                                                                                                                                                <input type="search" placeholder="  Search " 
          /> </pre>
-          
           </form>
-          
           
         </span>
        
@@ -131,7 +139,7 @@ const Mainpage = () => {
             <Pie 
             dataKey="value" 
             isAnimationActive={false} 
-            data={data}
+            data={dat}
             cx={100}
             outerRadius={60}
             fill="black"
@@ -150,17 +158,7 @@ const Mainpage = () => {
           <li><h4>SuperHoodies</h4></li>
           <h5>14%</h5>
         </ul>
-          
-          
-
-          
-       
-
-                                                                       
-      
-       
-      
-         
+  
         </div>
         <div className="products2">
 

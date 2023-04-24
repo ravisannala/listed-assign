@@ -1,9 +1,19 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Meta from '../components/meta'
-import {Link} from "react-router-dom";
-import {BsGoogle} from 'react-icons/bs';
+import {Link , useNavigate} from "react-router-dom";
+//import {BsGoogle} from 'react-icons/bs';
 import {DiApple} from 'react-icons/di';
+import {LoginSocialGoogle} from "reactjs-social-login";
+import {GoogleLoginButton} from "react-social-login-buttons";
 const Login = () => {
+
+  const [togg , setTogg] = useState(false);
+  const navigate = useNavigate()
+  const siginHandler = ()=>{
+     //navigate("/main-page")
+    console.log(togg)
+  }
+  
   return (
     <div>
          <div className="board" text-color="white "><br /><br /><br /><br /><br />
@@ -17,20 +27,39 @@ const Login = () => {
             <div className="auth-card">
                 <h2 className="text-center mb-3">Sign In</h2>
                 <br />
-                <p>Sign in to your account</p>
+                <p>Sign in to your account</p><br />
 
-                <button ><BsGoogle /> Sign In with Google</button>
+
+
+                <LoginSocialGoogle 
+        client_id="109650002650-skcauo5thhc7s78i3di7hs32jmsq8v6k.apps.googleusercontent.com"
+        discoveryDocs="claims_supported"
+        access_type="offline"
+        onResolve={({provider, data})=>{
+          console.log(provider, data);
+          
+          navigate("/main-page")
+
+         
+        }}
+        onReject={({error}) =>{
+          console.log(error);
+        }}
+        >
+          <GoogleLoginButton />
+          </LoginSocialGoogle>
+
                 <button><DiApple />Sign In with Apple</button>
 
                <br /><br />
                 <form action="" className="d-flex flex-column gap-30">
                     <div>
                 
-                        <input type="email" name="email" placeholder="Email address" className="form-control" required/>
+                        <input  type="email" name="email" placeholder="Email address" required className="form-control" />
                     </div>
                 <br />
                     <div>
-                        <input type= "password" name="password" placeholder="Password" className="form-control"required />
+                        <input type= "password" name="password" placeholder="Password" required className="form-control" />
                     </div>
                     
                     <br />
@@ -39,7 +68,7 @@ const Login = () => {
                 
                         <div className=" mt-3 d-flex justify-content-center gap-15 align-items-center" >
                         <br />
-                        <Link to="/main-page"><button className="button border-0" type="submit">Sign In</button></Link>
+                        <button onClick={siginHandler} className="button border-0" type="submit"><Link to="/main-page">Sign in</Link></button>
                         <p>Don't have an account?</p>
                         <br />
                         <Link to="/signup" className="button signup">Register here</Link>
